@@ -50,6 +50,7 @@
   imports = [
     ./greetd.nix
     ./hardware-configuration.nix
+    ./hostname.nix
     ./packages.nix
   ];
 
@@ -66,7 +67,6 @@
     LC_TIME = "nl_NL.UTF-8";
   };
 
-  networking.hostName = "nixos";
   networking.networkmanager.enable = true;
 
   nix.settings = {
